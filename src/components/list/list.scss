@@ -1,0 +1,28 @@
+#list-wrapper {
+    text-align: left;
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        list-style: none;
+
+        a {
+            @include transitionMixin(all 0.5s ease);
+            padding: 10px;
+            display: block;
+            background-color: $defaultBackground;
+            display: flex;
+            justify-content: space-between;
+
+            &:hover {
+                background-color: darken(
+                    $color: $defaultBackground,
+                    $amount: 5
+                );
+            }
+        }
+    }
+}

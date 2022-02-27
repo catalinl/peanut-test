@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: $defaultBackground;
+}
+
+#app-wrapper {
+    text-align: center;
+    color: white;
+    padding: 0 20%;
+
+    a {
+        color: $defaultLinkColor;
+        @include transitionMixin(color 0.5s);
+
+        &:hover {
+            color: darken($color: $defaultLinkColor, $amount: 15);
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.movie-ratings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        padding: 5px;
+
+        &.reaction-icon {
+            cursor: pointer;
+        }
+
+        &.reaction-count {
+            margin-right: 20px;
+        }
+    }
+}
